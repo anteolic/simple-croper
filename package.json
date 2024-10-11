@@ -1,0 +1,26 @@
+{
+  "name": "@saltcorn/simple-cropper",
+  "version": "0.3.0",
+  "description": "Cropping images and save to server",
+  "main": "index.js",
+  "dependencies": {},
+  "author": "Ante Olic",
+  "license": "MIT",
+  "repository": "github:saltcorn/simple-cropper",
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 2020
+    },
+    "env": {
+      "node": true,
+      "es6": true
+    },
+    "rules": {
+      "no-unused-vars": "off",
+      "no-case-declarations": "off",
+      "no-empty": "warn",
+      "no-fallthrough": "warn"
+    }
+  }
+}
