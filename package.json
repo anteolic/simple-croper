@@ -1,12 +1,12 @@
 {
-  "name": "@saltcorn/simple-cropper",
+  "name": "anteolic/simple-cropper",
   "version": "0.3.0",
   "description": "Cropping images and save to server",
   "main": "index.js",
   "dependencies": {},
   "author": "Ante Olic",
   "license": "MIT",
-  "repository": "github:saltcorn/simple-cropper",
+  "repository": "github:anteolic/simple-cropper",
   "eslintConfig": {
     "extends": "eslint:recommended",
     "parserOptions": {
