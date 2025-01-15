@@ -95,18 +95,26 @@ return div(
     // `script` element za izvršavanje JavaScript koda
     script(
       domReady(`
-        
+        // Inicijalizuj cropper
         $('.cropme').simpleCropper(); 
     
-        
-        
+        // Dodaj event listener za dugme "ok"
         document.querySelector(".ok").addEventListener("click", () => {
-        document.querySelector("#inputslika").value = document.querySelector(".cropme img").src;
-
-         
-        }); 
+          // Koristi setTimeout da sačekaš da slika bude spremna
+          setTimeout(() => {
+            const imgElement = document.querySelector(".cropme img");
+    
+            // Provera da li je slika dostupna i da li je cropovanje završeno
+            if (imgElement && imgElement.complete && imgElement.naturalWidth !== 0) {
+              document.querySelector("#inputslika").value = imgElement.src;
+            } else {
+              console.error("Slika još nije spremna.");
+            }
+          }, 500); // Čekaj 500ms pre nego što pristupiš src
+        });
       `)
     )
+    
     
   ]
 );
