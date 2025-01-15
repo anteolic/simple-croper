@@ -1,6 +1,6 @@
 {
   "name": "anteolic-simple-cropper",
-  "version": "0.3.2",
+  "version": "0.3.1",
   "description": "Cropping images and save to server",
   "main": "index.js",
   "dependencies": {},
