@@ -120,9 +120,7 @@ module.exports = {
   plugin_name: "image-cropper",
  fileviews: { "Image Cropper": image_cropper },
  headers: [
-  {
-    script: "/plugins/public/image-cropper/jquery-1.10.2.min.js",
-  },
+ 
   {
     script: "/plugins/public/image-cropper/jquery.Jcrop.js",
   },
